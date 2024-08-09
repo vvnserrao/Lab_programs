@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* Basedon element */
+        p{
+            color:blue;
+        }
+        /* Baased on ID */
+        #div-paragraph
+        {
+            color: brown;
+        }
+        /* Based on class */
+        .listing
+        {
+            color: darkgreen;
+        }
+        /* Based on Descendent */
+        div p 
+        {
+            color: gold;
+        } 
+        /* Based on Attribute */
+        [type="submit"] {
+            color: purple;
+        }
+        /* Based on Child */
+        ul>li{
+            color:gray;
+        }
+        /* Based on Psedu-class  */
+        a:hover
+        {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Selectors Demonstration</h1>
+
+    <p>This is a text to demonstrate element selector</p>
+
+    <div>
+        <p id="div-paragraph">This is a text to demonstrate id selector</p>
+    </div>
+
+    <a class="listing" href="exmpl1.html">This is the example for class selector</a>
+
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+    </ul>
+
+    <div>
+        <p>This is the text to demonstrate Descendant selector.</p>
+    </div>
+
+    <input type="submit" value="Atribute Selector">
+</body>
+</html>
