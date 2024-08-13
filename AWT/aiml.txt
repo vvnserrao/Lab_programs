@@ -1,0 +1,587 @@
+Assignment -1
+
+WRITE PYTHON PROGRAMS FOR THE FOLLOWING QUESTIONS
+
+1. Show that a List in python can
+• store elements of different types (integer, float, string, etc.)
+Code:
+list1=[1,2,3,"vivian","serrao",True,9.87]
+print("List elements: ",list1)
+
+Output:
+List elements:  [1, 2, 3, 'vivian', 'serrao', True, 9.87]
+
+• store duplicate elements
+Code:
+list1=[1,2,3,4,1,2,3,5,6,87]
+print("Duplicate elements list",list1)
+
+Output:
+Duplicate elements list [1, 2, 3, 4, 1, 2, 3, 5, 6, 87]
+
+2. Check if an Element Exists in a List ( Note make use of ‘in’)
+Code:
+list1=[1,2,3,4,5,6,7,8]
+a=int(input("Enter the search element: "))
+if a in list1:
+	print(a, " is present in the list")
+else:
+	print("Element not found")
+
+Output:
+Enter the search element: 5
+5  is present in the list
+
+3. Find the length of the list.
+Code:
+list1=[1,2,3,4,5]
+print("Length of list:",len(list1))
+
+Output:
+Length of list: 5
+
+4. Create a list with value n ** 2 where n is a number from 1 to 5
+Code:
+list1=[]
+for i in range(1,6):
+	list1.append(i **2)
+print(list1)
+
+Output:
+[1, 4, 9, 16, 25]
+
+5. Python program to print the elements of an array in reverse order
+Code:
+list1=[1,2,3,4,5,6,7,8]
+print("Elements in reverse order", list1[::-1])
+
+Output:
+Elements in reverse order [8, 7, 6, 5, 4, 3, 2, 1]
+
+7. Python program to sort the elements of an array in descending order
+Code:
+list1=[4,6,1,2,3,8,9,0]
+list1.sort(reverse=True)
+print("Array in descending order: ",list1)
+
+Array in descending order:  [9, 8, 6, 4, 3, 2, 1, 0]
+
+8. Compare 2 lists in python(use The cmp() function
+• The set() function and == operator
+Code:
+list1 = [1, 2, 3, 3]
+list2 = [3, 2, 1]
+list3 = [1, 2, 3, 4]
+
+print(set(list1) == set(list2))  
+print(set(list1) == set(list3))
+
+Output:
+True
+False
+
+
+	• The sort() function and == operator)
+Code:
+list1 = [3, 1, 2]
+list2 = [1, 2, 3]
+list3 = [1, 2, 4]
+
+list1.sort()
+list2.sort()
+list3.sort()
+
+print(list1 == list2) 
+print(list1 == list3) 
+
+Output:
+True
+False
+
+9. Remove a specific item from a list by using the three methods remove(), pop(),
+and clear().
+Code:
+list1=[1,2,3,4,5,6,7,8]
+list1.remove(3)
+print(list1)
+
+list1.pop()
+print(list1)
+
+list1.clear()
+print(list1)
+
+Output:
+[1, 2, 4, 5, 6, 7, 8]
+[1, 2, 4, 5, 6, 7]
+[]
+
+10.Write a NumPy program to convert an integer array to a floating type.
+Code:
+import numpy as np
+arr=[1,2,3,4,5,6]
+x = np.asfarray(arr)
+print(x)
+
+Output:
+[1. 2. 3. 4. 5. 6.]
+
+
+11.Write a NumPy program to convert a list and tuple into arrays.
+Code:
+list1=np.array(arr)
+print("list array" , list1)
+
+tuple1=tuple(np.array(arr))
+print("Tuple array" , tuple1)
+
+Output:
+list array [1 2 3 4 5 6]
+Tuple array (1, 2, 3, 4, 5, 6)
+
+
+12. Write a NumPy program to convert a list and tuple into arrays.(np.asarray)
+Code:
+list1=np.asarray(arr)
+print("list array" , list1)
+
+tuple1=tuple(np.asarray(arr))
+print("Tuple array" , tuple1)
+
+Output:
+list array [1 2 3 4 5 6]
+Tuple array (1, 2, 3, 4, 5, 6)
+
+
+
+				         Assignment 2
+
+1.Write Python program to find the LCM
+Code:
+import math
+
+def lcm(a, b):
+    return abs(a * b) // math.gcd(a, b)
+
+a = int(input("Enter First Number: "))
+b = int(input("Enter Second Number: "))
+
+print("LCM: ", lcm(a, b))
+Output:
+Enter First Number: 10
+Enter Second Number: 20
+LCM:  20
+
+2. Write a Python Program to Make a Simple Calculator
+Code:
+num1 = int(input("Enter First Number: "))
+operation = input("Enter the Operation: ")
+num2 = int(input("Enter Second Number: "))
+if operation=="+":
+    print("Answer is",num1+num2)
+elif operation=="-":
+    print("Answer is",num1-num2)
+elif operation=="*":
+    print("Answer is",num1*num2)
+elif operation=="/":
+    if num2 !=0:
+        print("Answer is",num1/num2)
+    else:
+        print("Cannot devide it by zero")
+
+
+Output:
+Enter First Number: 10
+Enter the Operation: /
+Enter Second Number: 0
+Cannot devide it by zero
+
+3.Program to Merge Two Lists
+Code:
+n1 = int(input("Enter length of First List: "))
+n2 = int(input("Enter Length of Second List: "))
+list1=[]
+list2=[]
+
+print("Enter the First List Element")
+for i in range(n1):
+    list1.append(input())
+
+print("Enter the Second List Element")
+for i in range(n2):
+    list2.append(input())   
+ 
+list3=list1+list2
+print("Merged List is:",list3)
+
+Output:
+Enter length of First List: 5
+Enter Length of Second List: 5
+Enter the First List Element
+1
+2
+3
+4
+5
+Enter the Second List Element
+6
+7
+8
+9
+10
+Merged List is: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
+
+4. Demonstrate the difference between list and tuple
+Code:
+list1=[1,2,3] #Created using [] bracket
+list1.append(1) #can add element
+list1.remove(2) #can remove element
+list1[1]=2 #can change element
+print(list1)
+
+tuple1=(1,2,3) #created using () bracket
+tuple1.append(4) #cannot add element
+tuple1.remove(1) #cannot remove element
+tuple1[0]=2 #cannot modify element
+print(tuple1)
+
+Output:
+[1, 2, 1]
+(1, 2, 3)
+
+5. Try the following on tuple
+Code:
+tuple1=(1,2,3,6,5,4)
+print(len(tuple1))
+print(max(tuple1))
+print(min(tuple1))
+print(sum(tuple1))
+print(sorted(tuple1))
+
+Output:
+6
+6
+1
+21
+[1, 2, 3, 4, 5, 6]
+
+6.Demonstrate the following
+Code:
+tuple1=(1,3,5,7,9)
+list1=list(tuple1)
+print(list1)
+
+tuple2=tuple(list1)
+print(tuple2)
+
+str1=str(tuple2)
+print(str1)
+
+Output:
+[1, 3, 5, 7, 9]
+(1, 3, 5, 7, 9)
+(1, 3, 5, 7, 9)
+
+7. Demonstrate the following on dictionary
+Code:
+dict1 = dict()
+print("Initialized empty dictionary:", dict1) 
+
+dict2 = {1: 'vivian', 2: 'serrao', 3: 'mca'}
+print("Initialized dictionary with key-value pairs:", dict2) 
+
+dict1 = dict2.copy()
+print("Copied dict2 into dict1:", dict1)
+
+dict1.clear()
+print("Cleared all items from dict1:", dict1)  
+
+print("Value for key 1 in dict2:", dict2.get(1))  
+
+print("All key-value pairs in dict2:", dict2.items()) 
+
+print("All keys in dict2:", dict2.keys())  
+
+dict2.pop(3)
+print("Removed item with key 3 from dict2:", dict2) 
+
+dict2.popitem()
+print("Removed and returned an arbitrary (key, value) pair from dict2:", dict2)  
+
+dict3 = {4: 'student'}
+dict2.update(dict3)
+print("Updated dict2 with dict3:", dict2)  
+
+print("All values in dict2:", dict2.values())
+
+#fromkeys()
+keys = [1, 2, 3]
+default_value = 'default'
+new_dict = dict.fromkeys(keys, default_value)
+
+print("Dictionary created with fromkeys() and default value 'default':", new_dict)
+
+# setdefault()
+dict1 = {1: 'a', 2: 'b'}
+
+value1 = dict1.setdefault(2, 'default_value')
+value2 = dict1.setdefault(3, 'default_value')
+
+print("Dictionary after using setdefault():", dict1)
+
+
+
+Output:
+Initialized empty dictionary: {}
+Initialized dictionary with key-value pairs: {1: 'vivian', 2: 'serrao', 3: 'mca'}
+Copied dict2 into dict1: {1: 'vivian', 2: 'serrao', 3: 'mca'}
+Cleared all items from dict1: {}
+Value for key 1 in dict2: vivian
+All key-value pairs in dict2: dict_items([(1, 'vivian'), (2, 'serrao'), (3, 'mca')])
+All keys in dict2: dict_keys([1, 2, 3])
+Removed item with key 3 from dict2: {1: 'vivian', 2: 'serrao'}
+Removed and returned an arbitrary (key, value) pair from dict2: {1: 'vivian'}
+Updated dict2 with dict3: {1: 'vivian', 4: 'student'}
+All values in dict2: dict_values(['vivian', 'student'])
+Dictionary created with fromkeys() and default value 'default': {1: 'default', 2: 'default', 3: 'default'}
+Dictionary after using setdefault(): {1: 'a', 2: 'b', 3: 'default_value'}
+
+8. Perform positive indexing, slicing, negative indexing on lists
+Code:
+list1 = ['a', 'b', 'c', 'd', 'e', 'f']
+
+print("Positive Indexing:")
+print("Element at index 0:", list1[0])
+print("Element at index 5:", list1[5]) 
+
+print("Negative Indexing:")
+print("Last element:", list1[-1]) 
+print("Second to last element:", list1[-2]) 
+
+print("Slicing:")
+print("Elements from index 0 to 2 :", list1[0:3])  
+print("Elements from index 3 to 5 :", list1[3:6]) 
+print("Elements in reverse order:", list1[::-1]) 
+print("Elements in reverse order and skipping 1 element:", list1[::-2]) 
+
+
+Output:
+Positive Indexing:
+Element at index 0: a
+Element at index 5: f
+Negative Indexing:
+Last element: f
+Second to last element: e
+Slicing:
+Elements from index 0 to 2 : ['a', 'b', 'c']
+Elements from index 3 to 5 : ['d', 'e', 'f']
+Elements in reverse order: ['f', 'e', 'd', 'c', 'b', 'a']
+Elements in reverse order and skipping 1 element: ['f', 'd', 'b']
+
+9.Program to find the second largest and second smallest in one-dimensional array.
+Code:
+arr=[1,2,1,2,3,4,5,6,7,3,2,6,10,8]
+arr=list(set(arr))
+arr.sort()
+print("Second Smallest Element: ",arr[1])
+print("Second Largest Element: ",arr[-2])
+
+Output:
+Second Smallest Element:  2
+Second Largest Element:  8
+
+10.Accept a number and display if it is odd or even. (use only one if block without
+else)
+Code:
+def check(num):
+    if num %2==0:
+        return "even"
+    return "odd"
+num=int(input("Enter a Number :"))
+print("Number is",check(num))
+
+ Output:   
+Enter a Number :15
+Number is odd
+
+				
+
+
+
+				       ASSIGNMENT-3
+
+1. Write a program that asks the user to input his name and print its initials. Assuming that the user always types first name, middle name and last name and does not include any unnecessary spaces.
+       For example, if the user enters Ajay Kumar Garg the program should display A. K. G.
+Code:
+
+first_name=input("Enter First Name: ")
+middle_name=input("Enter Middle Name: ")
+last_name=input("Enter Last Name: ")
+initials=first_name[0]+"."+middle_name[0]+"."+last_name[0]+"."
+print(initials)
+
+Output:
+Enter First Name: Vivian
+Enter Middle Name: Serrao
+Enter Last Name: Badyar
+V.S.B.
+
+2. Write a program in python that accepts a string to setup a passwords. Your entered password must meet the following requirements:
+• The password must be at least eight characters long.
+• It must contain at least one uppercase letter.
+• It must contain at least one lowercase letter.
+• It must contain at least one numeric digit.
+Your program should should perform this validation.
+Code:
+password=input("Enter the Password: ")
+upper=False
+lower=False
+numeric=False
+if len(password)>=8:
+    for i in password:
+        if i.isupper():
+            upper=True
+        if i.islower():
+            lower=True
+        if i.isdigit():
+            numeric=True
+if lower==upper==numeric==True:
+      print("Password is valid.")
+else:
+        print("Password is invalid.")
+            
+Output:
+Enter the Password: Vivian123
+Password is valid.
+
+3. Write a Python program that accepts a string from user. Your program should create and display a new string where the first and last characters have been exchanged.
+Code:
+s1=input("Enter a String: ")
+s2=s1[-1]+s1[1:-1]+s1[0]
+print(s2)
+
+Output:
+Enter a String: Ilove Python
+nlove PythoI
+
+4. Write a program that accepts a string from user. Your program should count and display number of vowels in that string.
+
+Code:
+s1=input("Enter a String: ")
+vowels=['a','e','i','o','u']
+cnt=0
+for i in s1:
+    if i.lower() in vowels:
+        cnt+=1
+print("Number of vowels are:",cnt)
+        
+Output:
+Enter a String: Artificial Intelligence
+Number of vowels are: 10
+
+ 5. Write a program that reads a string from keyboard and display:
+       * The number of uppercase letters in the string
+       * The number of lowercase letters in the string
+       * The number of digits in the string
+Code:
+
+s1=input("Enter a String: ")
+upper=0
+lower=0
+digits=0
+for i in s1:
+        if i.isupper():
+            upper+=1
+        if i.islower():
+            lower+=1
+        if i.isdigit():
+            digits+=1
+print("Number of UpperCase Letters are:",upper)
+print("Number of LowerCase Letters are:",lower)
+print("Number of Digits are:",digits)
+
+Output:
+Enter a String: I am Studying In 2 year MCA
+Number of UpperCase Letters are: 6
+Number of LowerCase Letters are: 14
+Number of Digits are: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Extra Code:(Practice question)
+
+n=int(input("Enter the size: "))
+l=int(input("Enter lower bound:"))
+h=int(input("Enter higher bound :"))
+l1=[]
+sumin=0
+sumout=0
+print("Enter" , n, "numbers")
+for i in range(n):
+	l1.append(int(input()))
+for i in l1:
+	if i >=l and l<=h:
+    	sumin+=i
+	else:
+    	sumout+=i
+print("Sum inside bound is : " ,sumin)
+print("Sum outside bound is :" ,sumout)
+
+
+
+
+
+
+
+
+

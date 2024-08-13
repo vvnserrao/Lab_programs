@@ -1,0 +1,593 @@
+ASSIGNMENT 1
+
+    1. Create an HTML page showing the use of following: Paragraphs, Line breaking, Preserving multiple whitespaces, tabs, linebreaks, Headings, Block quoting, content based tags, Superscript and Subscript, various character entities, horizontal rules.
+Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example1</title>
+    <style>
+        /* Center the content */
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Hello, welcome to the AWT lab</h1>
+        
+        <!-- Paragraphs -->
+        <p>This is the 1st paragraph text.</p>
+        <p>This is the 2nd paragraph text.<br>Line breaking example.</p>
+
+        <!-- Horizontal Rule -->
+        <hr>
+
+        <!-- Block Quoting -->
+        <blockquote>
+            <p>"The only limit to our realization of tomorrow is our doubts of today." - Franklin D. Roosevelt</p>
+        </blockquote>
+
+        <!-- Headings -->
+        <h2>Mathematical Notation</h2>
+        <h3>Examples:</h3>
+        <h4>s<sup>2</sup> = This is Super Script</h4>
+        <h4>s<sub>2</sub> This is Subscript</h4>
+
+        <!-- Preserving Whitespace and Tabs -->
+        <pre>
+            This    is    text      with      multiple
+            spaces and         tabs.
+        </pre>
+
+        <!-- Special Characters -->
+        <p>Special characters: &amp; &lt; &gt; &copy;</p>
+
+        <!-- Content Based Tags -->
+        <address>
+            Contact us at: <a href="https://www.vivianserrao.com">www.vivianserrao.com</a>
+        </address>
+    </div>
+</body>
+</html>
+
+2. Create an HTML page with
+        a. An image
+        b. Link to another page
+        c. Link to section of the same page
+        d. An image as a link to another page
+Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example2</title>
+</head>
+<body>
+    <center>
+        <h1>This is Our College</h1>
+        
+        <!-- Image as a link to another page -->
+        <a href="./exmpl1.html">
+            <img src="https://daijiworld.ap-south-1.linodeobjects.com/iWeb/daijiworld/images3/asha_19621_toycathon.jpg" alt="Profile Image" width="300">
+        </a>
+        <br><br>
+        
+        <!-- Link to another page -->
+        <a href="https://nmamit.nitte.edu.in" target="_blank">Click here to view Website</a>
+        <br><br>
+        
+        <!-- Link to a section of the same page -->
+        <a href="#new_page">Link to section of the same page</a>
+        <br><br>
+        
+        <!-- Section to navigate to -->
+        <section style="margin-top: 35%;" id="new_page">
+            <h2>Second Section</h2>
+            <p>This is the second section of the page.</p>
+        </section>
+    </center>
+</body>
+</html>
+
+
+
+  3. Create an HTML page for displaying Vision, Mission, PEOs, POs, PSOs of the MCA department as displayed in the lab. Try different types of numbering and bulleting.
+Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision Misson</title>
+    <style>
+        h2
+        {
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+   
+    <h1>MASTER OF COMPUTER APPLIACTION</h1>
+   <hr>
+    <h2>VISION</h2>
+<p>Equipping students with computing and programming domain
+    expertise with the state of the art technology solutions to enable them
+    to meet global professional challenges.</p>
+    <h2>MISSION</h2>
+    <p>The department strives to create an environment conducive to
+        equipping students with teamwork ability, Professional Ethics. Sound
+        Technical Knowledge and Skills to Handle Technological Challenges</p>
+        <ul>
+            <li>Professional Ethics</li>
+            <li>Sound Technical Knowledge</li>
+            <li>Skills to Handle Technological Challenges</li>
+        </ul>
+        <h2>Programme Educational Objectives (PEO's)</h2>
+        <ul>
+            <li>To think critically, work creatively, communicate effectively, and become
+                technologically competent.</li>
+                <li>To be able to update themselves in areas and technologies relevant to their career.</li>
+                <li>o function in supportive/ leadership roles with ethical responsibilities and high regard
+                    towards societal needs.</li>
+                    <li>To develop team work ability, lead initiatives and manage task effectively.</li>
+        </ul>
+        <h2>Programme Outcomes (POs)</h2>
+        <ol>
+            <li>Apply knowledge of mathematics, science, and engineering.</li>
+            <li>Identify, formulate, research literature, and analyze complex engineering problems.</li>
+            <li>Design a system, component, or process to meet desired needs within realistic constraints such as economic, environmental, social, political, ethical, health and safety, manufacturability, and sustainability.</li>
+            <li>Design and conduct experiments, as well as analyze and interpret data.</li>
+            <li>Apply appropriate techniques, resources, and modern engineering and IT tools to complex engineering activities.</li>
+            <li>Assess societal, health, safety, legal, and cultural issues.</li>
+            <li>Understand the impact of engineering solutions in a global, economic, environmental, and societal context.</li>
+            <li>Understand professional and ethical responsibility.</li>
+            <li>Function effectively as an individual, member, or leader on multidisciplinary teams.</li>
+            <li>Communicate effectively.</li>
+            <li>Recognize the need for and engage in lifelong learning.</li>
+            <li>Acknowledge contemporary issues.</li>
+        </ol>
+        <h2>Programme Specific outcomes (PSOs)</h2>
+        <ol>
+            <li>Empower students to exemplify themselves in the field of Information Technology, ensuring credibility, integrity, and ethical standards.</li>
+            <li>Adopt research practices and trending technologies such as Artificial Intelligence and Machine Learning, Internet of Things, Cloud Computing, and Data Analytics to solve real-world problems.</li>
+        </ol>
+        
+</body>
+</html>
+
+4. Create an HTML page with Abbreviations of courses offered at NMAMIT as terms and definitions.
+Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Abbreviations</title>
+</head>
+<body>
+    <center>
+        <h1>Courses Offered at NMAMIT</h1>
+        
+        <p><strong>B.Tech:</strong> Bachelor of Technology</p>
+        <p><strong>M.Tech:</strong> Master of Technology</p>
+        <p><strong>MBA:</strong> Master of Business Administration</p>
+        <p><strong>M.Sc:</strong> Master of Science</p>
+        <p><strong>Ph.D.:</strong> Doctor of Philosophy</p>
+        <p><strong>B.Sc:</strong> Bachelor of Science</p>
+        <p><strong>B.A.:</strong> Bachelor of Arts</p>
+        <p><strong>M.A.:</strong> Master of Arts</p>
+        <p><strong>IT:</strong> Information Technology</p>
+        <p><strong>CS:</strong> Computer Science</p>
+        <p><strong>EC:</strong> Electronics and Communication</p>
+        <p><strong>ME:</strong> Mechanical Engineering</p>
+    </center>
+</body>
+</html>
+
+
+5. Create an HTML page with following nesting of lists:
+
+To do List:
+1. Shopping
+	a. Cloths
+	b. Cell Phone
+2. Meeting
+	a. Friends
+    • Friend1
+    • Friend2
+b. Teacher
+        ◦ Teacher1
+        ◦ Teacher2
+Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <h1>To Do List</h1>  
+    <ol>
+        <li>Shopping
+            <ul style="list-style-type: lower-alpha;">
+                <li>Cloths</li>
+                <li>Cell Phone</li>
+            </ul>
+        </li>
+        <li>Meeting
+            <ul style="list-style-type: lower-alpha;">
+                <li>Friends
+                    <ul>
+                        <li>Friend1</li>
+                        <li>Friend2</li>
+                    </ul>
+                </li>
+                <li>Teacher
+                    <ul>
+                        <li>Teacher1</li>
+                        <li>Teacher2</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>
+
+
+ 6. Display your class time table.
+Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h1{
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>MCA C Section Time Table</h1>
+    <table border="1">
+        <tr>
+            <th>Days</th>
+            <th>9.00- 9.50</th>
+            <th>9.50-10.40</th>
+            <th>11.10-12.05</th>
+            <th>12.05-1.00</th>
+            <th>1.00-1.55</th>
+            <th>1.55-2.50</th>
+            <th>2.50-3.40</th>
+            <th>3.40-4.30</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>MC & AD</td>
+            <td>AIML</td>
+            <td colspan="2">Mini Project</td>
+            <td rowspan="5">Lunch Break</td>
+            <td>CC & BDA</td>
+            <td>Placement Training</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>AIML</td>
+            <td>AWT</td>
+            <td>Placement Training</td>
+            <td>CC & BDA</td>
+            <td colspan="3">LAB</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>AWT</td>
+            <td>AIML</td>
+            <td>Placement Training</td>
+            <td>BCT/CS</td>
+            <td>MC & AD</td>
+            <td colspan="2">-</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>CC & BDA</td>
+            <td>AWT</td>
+            <td>BCT/CS</td>
+            <td>AIML</td>
+            <td colspan="3">LAB</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td>BCT/CS</td>
+            <td>MC & AD</td>
+            <td colspan="2">Mini Project</td>
+            <td>AWT</td>
+            <td colspan="2">Placement Training</td>
+        </tr>
+        <!-- <tr>
+            <td>Saturday</td>
+        </tr> -->
+    </table>
+</body>
+</html>
+
+
+7. Design a student registration form for student’s enrolment to the course which collects personal and previous educational details. Include form elements: label, input, select, text area, fieldset, legend, datalist.
+Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        .registration_form {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"],textarea,select {
+            width: 100%;
+            padding: 8px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <form class="registration_form">
+        <h1 style="text-align: center;">Student Registration Form</h1>
+        
+        <fieldset>
+            <legend>Registration Form</legend>
+            
+            <label for="student_name">Student Name:</label>
+            <input type="text" placeholder="Enter Student Name" required>
+            
+            <label for="father_name">Father's Name:</label>
+            <input type="text" placeholder="Enter Father's Name" required>
+            
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male">Male</input>
+            <input type="radio" name="gender" value="female">Female</input>
+
+            <label for="address">Address:</label>
+            <textarea  rows="4" placeholder="Enter Address" required></textarea>
+     
+            <label for="previous_course">Previous Course:</label>
+            <input type="text" placeholder="Enter Previous School" list="Course">
+            <datalist id="Course">
+                <option value="BCA">
+                <option value="BSc">
+                <option value="Others">
+            </datalist>
+            
+            <label for="grade">Grade Achieved:</label>
+            <select id="grade" name="grade" required>
+                <option value="" disabled selected>Select Grade</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+            </select>
+        </fieldset>
+    
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+
+ASSIGNMENT 2
+
+
+       1. Create a web page with different levels of stylesheets. Also show the priority applied in these levels of stylesheets.
+Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylesheet Example</title>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal stylesheet */
+        .internal-style {
+            color: green;
+            font-size: 20px;
+        }
+        .background {
+            background-color: lightblue;
+        }
+    </style>
+    <style>
+        /* Another internal stylesheet (later in the head) */
+        .internal-style {
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="external-style">This is a heading with external stylesheet</h1>
+    <p class="internal-style background">This paragraph has internal and background styles.</p>
+    <p style="color: red; font-size: 24px;">This paragraph has inline styles, which override internal and external styles.</p>
+</body>
+</html>
+
+Style.css
+/* external stylesheet */
+.external-style {
+    color: blue;
+    font-size: 28px;
+}
+
+
+    2. Create a page which shows the usage of different selectors for specifying style rules.
+Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        /* Basedon element */
+        p{
+            color:blue;
+        }
+        /* Baased on ID */
+        #div-paragraph
+        {
+            color: brown;
+        }
+        /* Based on class */
+        .listing
+        {
+            color: darkgreen;
+        }
+        /* Based on Descendent */
+        div p 
+        {
+            color: gold;
+        } 
+        /* Based on Attribute */
+        [type="submit"] {
+            color: purple;
+        }
+        /* Based on Child */
+        ul>li{
+            color:gray;
+        }
+        /* Based on Psedu-class  */
+        a:hover
+        {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Selectors Demonstration</h1>
+
+    <p>This is a text to demonstrate element selector</p>
+
+    <div>
+        <p id="div-paragraph">This is a text to demonstrate id selector</p>
+    </div>
+
+    <a class="listing" href="exmpl1.html">This is the example for class selector</a>
+
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+    </ul>
+
+    <div>
+        <p>This is the text to demonstrate Descendant selector.</p>
+    </div>
+
+    <input type="submit" value="Atribute Selector">
+</body>
+</html>
+
+
+    3. Create a page which includes application of font and text related style properties.
+Code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font and Text</title>
+    <style>
+        h1{
+            text-align: center;
+            letter-spacing: 5px;
+        }
+        p{
+            font-size: 20px;
+        }
+        .f1
+        {
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+        }
+        .f2
+        {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .f3
+        {
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading in center with letter spacing 5px</h1>
+    <p>This is the font with 20px</p>
+    <p class="f1">This is the Text with Courier New font and italic </p>
+    <p class="f2">This is the Text with Segoe UI font and size is 40px with bold </p>
+    <p class="f3">This is text with underline and transformed to uppercase </p>
+</body>
+</html>
+
+
+    4. Create a page which includes application of list related style properties.
+
+    5. Show the use of Box Model properties.
+
+    6. Show the use of div and span tags.
+
+
